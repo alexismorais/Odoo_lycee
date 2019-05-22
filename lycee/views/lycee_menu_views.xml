@@ -1,0 +1,10 @@
+<odoo>
+  <data>
+    <menuitem name="Menu lycee" id="model_menu_root"/>
+    <menuitem name="Agenda" id="model_menu_agenda" parent="model_menu_root" action="agenda_action"/>
+    <menuitem name="Classe" id="model_menu_classe" parent="model_menu_root" action="classe_action"/>
+    <menuitem name="Cours" id="model_menu_cours" parent="model_menu_root" action="cours_action"/>
+    <menuitem name="Eleve" id="model_menu_eleve" parent="model_menu_root" action="eleve_action"/>
+    <menuitem name="Professeur" id="model_menu_professeur" parent="model_menu_root" action="professeur_action"/>
+  </data>
+</odoo>

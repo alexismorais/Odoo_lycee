@@ -1,0 +1,40 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="view_cours_tree">
+      <field name="name">cours.tree</field>
+      <field name="model">lycee.cours</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+		  <field name="agenda_ids"/>
+        </tree>
+      </field>
+    </record>
+    
+   <record model="ir.ui.view" id="view_cours_form">
+      <field name="name">cours.tree</field>
+      <field name="model">lycee.cours</field>
+      <field name="arch" type="xml">
+      <form>
+      	<header>
+      	</header>
+      	<sheet>
+	      	<group>
+			  <field name="name"/>
+			  <field name="agenda_ids"/>
+	      	</group>
+      	</sheet>	
+      </form>
+      </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="cours_action">
+      <field name="name">cours.windows</field>
+      <field name="res_model">lycee.cours</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+  	  <field name="context"></field>
+
+    </record>
+  </data>
+</odoo>

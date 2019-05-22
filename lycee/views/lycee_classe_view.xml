@@ -1,0 +1,46 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="view_classe_tree">
+      <field name="name">classe.tree</field>
+      <field name="model">lycee.classe</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+		  <field name="level"/>
+		  <field name="teacher_id"/>
+		  <field name="student_ids"/>
+		  <field name="student_nb"/>
+        </tree>
+      </field>
+    </record>
+    
+   <record model="ir.ui.view" id="view_classe_form">
+      <field name="name">classe.tree</field>
+      <field name="model">lycee.classe</field>
+      <field name="arch" type="xml">
+      <form>
+      	<header>
+      	</header>
+      	<sheet>
+	      	<group>
+	      			<field name="name"/>
+         			<field name="level"/>
+	      	        <field name="teacher_id"/>
+			        <field name="student_ids"/>
+			        <field name="student_nb"/>
+	      	</group>
+      	</sheet>	
+      </form>
+      </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="classe_action">
+      <field name="name">classe.windows</field>
+      <field name="res_model">lycee.classe</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+  	  <field name="context"></field>
+
+    </record>
+  </data>
+</odoo>
